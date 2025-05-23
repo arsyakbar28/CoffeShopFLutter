@@ -3,21 +3,17 @@ import 'package:coffee_shop/utils/color_set.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatelessWidget {
-  final dynamic controller; // Replace 'dynamic' with your actual controller type
+  final dynamic
+  controller; // Replace 'dynamic' with your actual controller type
 
-  const BottomNavBar({
-    super.key,
-    required this.controller,
-  });
+  const BottomNavBar({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        border: Border(
-          top: BorderSide(color: Colors.grey.shade300, width: 2),
-        ),
+        border: Border(top: BorderSide(color: Colors.grey.shade300, width: 2)),
       ),
       child: SizedBox(
         height: 100,

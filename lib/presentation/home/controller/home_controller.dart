@@ -30,6 +30,7 @@ class HomeController extends State<HomeView> {
       selectedNavBar = index;
     });
   }
+
   void setSelectedCategory(int index) {
     setState(() {
       selectedCategory = index;
@@ -47,5 +48,4 @@ class HomeController extends State<HomeView> {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
-
 }
