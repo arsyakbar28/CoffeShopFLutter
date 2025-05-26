@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:coffee_shop/core.dart';
 
-class DetailController extends State<DetailView> {
-  static late DetailController instance;
-  late DetailView view;
+class PaymentController extends State<PaymentView> {
+  static late PaymentController instance;
+  late PaymentView view;
 
   @override
   void initState() {
@@ -17,13 +17,6 @@ class DetailController extends State<DetailView> {
   @override
   void dispose() {
     super.dispose();
-  }
-
-  int selectedSize = 0;
-  void setSelectedSize(int index) {
-    setState(() {
-      selectedSize = index;
-    });
   }
 
   @override
