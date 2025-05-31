@@ -5,6 +5,26 @@ class PaymentController extends State<PaymentView> {
   static late PaymentController instance;
   late PaymentView view;
 
+  bool get isDeliver => false;
+
+  int selectedDelivery = 0;
+  void setSelectedDelivery(int index) {
+    setState(() {
+      selectedDelivery = index;
+    });
+  }
+  // Removed invalid 'ss' line
+
+  int _detailOrderCount = 0;
+
+  int get detailOrderCount => _detailOrderCount;
+
+  set detailOrderCount(int value) {
+    setState(() {
+      _detailOrderCount = value;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -21,4 +41,6 @@ class PaymentController extends State<PaymentView> {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+
+  void setDeliveryMethod(bool bool) {}
 }

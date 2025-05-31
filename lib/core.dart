@@ -2,7 +2,7 @@
 We believe, the class name must be unique. 
 If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
-fileCount: 13
+fileCount: 15
 */
 export 'package:coffee_shop/core_package.dart';
 export 'package:coffee_shop/presentation/detail/controller/detail_controller.dart';
@@ -16,4 +16,6 @@ export 'package:coffee_shop/presentation/payment/controller/payment_controller.d
 export 'package:coffee_shop/presentation/payment/view/payment_view.dart';
 export 'package:coffee_shop/presentation/splashscreen/controller/splashscreen_controller.dart';
 export 'package:coffee_shop/presentation/splashscreen/view/splashscreen_view.dart';
+export 'package:coffee_shop/presentation/succes/controller/succes_controller.dart';
+export 'package:coffee_shop/presentation/succes/view/succes_view.dart';
 export 'package:coffee_shop/utils/color_set.dart';
